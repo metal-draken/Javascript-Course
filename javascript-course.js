@@ -188,7 +188,7 @@ for (var i=0; i<5; i++) {
 */
 
 
-
+/*
 for (var i = 0; i < 5; i++) {
     for (var j = 0; j < 2; j++) {
         if (i == 1) {
@@ -198,11 +198,149 @@ for (var i = 0; i < 5; i++) {
     }
     console.log(i);
 }
+*/
+
+
+
+/*
+var XXX = [8,7,6,5];
+
+for (var i = 0; i < 4; i++) {
+  console.log(XXX[i]);
+}
+*/
 
 
 
 
+/*
+var AAA = [80,70,60,50];
 
+for (var i = 0; i < AAA.length; i++) {
+  console.log(AAA[i]);
+}
+
+console.log(AAA.length)
+*/
+
+
+/*
+var number = 5;
+
+while (number < 7) {
+  console.log(number);
+  number++;  
+}
+*/
+
+
+/*
+var number1 = true;
+var i = 2;
+
+while (number1) {
+  if (i == 3) {
+    number1 = false;
+  }
+  console.log(i);
+  i++;
+}
+*/
+
+/*var number1 = true;
+var i = 2;
+
+
+while (number1) {
+      if (i == 3) {
+    number1 = false;
+  }
+  console.log(i);
+  i++;
+}
+*/
+
+/*
+var number1 = false;
+
+while (number1) {
+  console.log("Executed");
+}
+*/
+
+
+/*
+var a=5;
+var b=10;
+
+a++;
+console.log(a+b)
+
+
+var c=5.2; 
+var d=4.8;
+
+console.log(c+d)
+
+
+var e=5.2; 
+var f=" Join";
+
+console.log(e+f)
+
+
+var g= 12; 
+var h="1";
+
+console.log(g+h)
+
+
+var i= 12; 
+var j= true;
+
+console.log(i+j)
+
+
+var k= true; 
+var l= null;
+var m= undefined;
+
+console.log(k+l+m)
+console.log(k+l)
+*/
+
+ 
+var a = 1.3;
+var b = 2.2;
+
+
+console.log(a * b);
+if (a * b == 2.86) {
+  console.log("true");
+} else {
+  console.log("false");
+}
+
+
+if ((a * b).toFixed(2) == 2.86) {
+  console.log("true");
+} else {
+  console.log("false");
+}
+*/
+
+
+var a = 6;
+var b = 2;
+var c = null;
+var d = 0;
+var e= 3.4;
+
+console.log(a/b);
+console.log(a/c);
+console.log(a/d);
+console.log(a/e);
+console.log((a/e).toFixed(2));
 
 
 
