@@ -1,0 +1,80 @@
+/*var person = {
+  name: "Max",
+  "last-name": "Payne",
+  age: 27,
+}
+
+var person2 = new Object();
+person2.name = "Anna";
+person2.age = 33;
+console.log (person2)
+
+var person3 = Object.create(person);
+person3.age = 50;
+console.log (person3)*/
+
+
+
+/*var person = {
+  name: "Max",
+  age: 27,
+}
+
+Object.prototype.greet = function() {
+  console.log("Hello There " + this.name + "!");
+};
+
+person.greet();
+var max = Object.create(person);
+max.name = "Maximiliam";
+
+max.greet();
+var anna = Object.create(max);
+anna.name = "Annastacia";
+anna.greet();
+
+
+console.log(anna.__proto__ == max);
+console.log(max.__proto__ == person);
+console.log(person.__proto__ == Object.prototype);
+
+console.log(Object.getPrototypeOf(anna));
+console.log(Object.getPrototypeOf(max));
+console.log(Object.getPrototypeOf(person));*/
+
+
+
+
+function ABC() {
+  this.name = "Max";
+  this.age = 12;
+  this.greet = function(){
+    console.log("Hello, I am " + this.name + "I'm " + this.age);
+  }
+}
+
+var personX = new ABC();
+personX.age = 20;
+console.log(personX);
+personX.greet();
+
+var personY = new ABC();
+personY.age = 35;
+console.log(personY);
+personY.greet();
+
+
+
+
+
+
+function DEF(bla1, bla2) {
+  this.name = bla1;
+  this.age = bla2;
+}
+
+var personA = new DEF("Axel", 15);
+console.log(personA);
+
+var personB = new DEF("Rita", 55);
+console.log(personB);

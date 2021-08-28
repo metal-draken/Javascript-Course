@@ -1,0 +1,11 @@
+var ABC =  new Date();
+console.log(ABC.toString());
+
+var BBB = new Date (2022, 5, 30);
+console.log(BBB.toString())
+
+var CCC = new Date ("2022/06/30");
+console.log(CCC.toString())
+
+console.log(CCC.getDate());
+console.log(CCC.getDay());

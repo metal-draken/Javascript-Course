@@ -1,0 +1,22 @@
+var cuentaDeBanco = {
+  dineroActual: 200
+}
+
+Object.defineProperty(cuentaDeBanco, "dinero", {
+  get: function() {
+    return this.dineroActual;
+  },
+  set: function(monto) {
+   this.dineroActual = monto;
+  }
+});
+
+
+console.log('El Get me dice:', cuentaDeBanco.dinero);
+
+cuentaDeBanco.dinero = 500;
+console.log('Luego del Set:', cuentaDeBanco.dinero);
+
+
+
+

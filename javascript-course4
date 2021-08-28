@@ -1,0 +1,36 @@
+var person = {
+  name: "Max",
+  "last-name": "Payne",
+  age: 27,
+  details: {
+    hobbies: ["Sports","Cooking"],
+    location: "Germany",
+  },
+  greet: function() {
+    console.log("Confused");
+  },
+  greet2: function() {
+    console.log("Hello I'm " + this.name)
+  }
+  };
+ 
+person.greet();
+person.greet2();
+
+
+console.log(person.name);
+console.log(person.age);
+console.log(person["name"]) 
+console.log(person.details.hobbies);
+
+
+console.log(typeof person);
+console.log(typeof person.name);
+console.log(typeof person["last-name"])
+console.log(person["last-name"])
+console.log(person.details);
+
+
+person.name = "Ana";
+console.log(person.name);
+

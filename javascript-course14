@@ -1,0 +1,42 @@
+var a ="5";
+console.log(parseInt(a));
+
+var b = 5;
+console.log(b.toString());
+
+var c= 10.3;
+console.log(c.toFixed(2));
+ 
+var XXX = "Any text";
+console.log(XXX.lenght);
+console.log(XXX[2]);
+console.log(XXX.charAt(2));
+console.log(XXX.concat(" will be fine"));
+console.log(XXX.toUpperCase());
+console.log(XXX.split(" "));
+
+var YYY = "Any text           ";
+console.log(YYY.trim());
+
+
+Math.PI;
+Math.E;
+
+var O = -3;
+console.log(Math.abs(O));
+console.log(Math.abs(O));
+console.log(Math.abs(O));
+
+var P = 127.38;
+console.log(Math.round(P));
+console.log(Math.ceil(P));
+console.log(Math.floor(P));
+
+Math.max (1000,100,1);
+Math.min (1000,100,1);
+
+Math.random()
+
+Math.floor(Math.random() * 100 + 1);
+Math.floor(Math.random() * 100 + 1);
+Math.floor(Math.random() * 100 + 1);

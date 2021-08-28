@@ -1,0 +1,108 @@
+ var array = [1,2,3];
+console.log(array.length);
+array[2]=100;
+array[5]=123;
+
+console.log(array);
+
+array.forEach(function(element){
+  console.log(element);
+});
+
+
+array.forEach(function(element){
+  console.log("2");
+});
+
+
+
+
+var array2 = [1,2,3]
+
+array2.push(4);
+console.log(array2);
+
+
+var array3 = [1,2,3,,,,,,,]
+
+array3.push(4);
+console.log(array3);
+
+
+var array4 = [1,2,3,4]
+
+array4.pop();
+console.log(array4);
+
+
+
+
+var array5 = [1,2,3,4]
+
+array5[array5.indexOf(3)] = 100;
+console.log(array5);
+
+
+
+var array6 = [1,2,3,4,5,6,7,8]
+var Narray6 = array6.splice(2)
+console.log(array6);
+console.log(Narray6);
+
+
+
+var array7 = [1,2,3,4,5,6,7,8]
+var Narray7 = array7.splice(2,3)
+console.log(array7);
+console.log(Narray7);
+
+
+var array8 = [1,2,3,4,5,6,7,8]
+var Narray8 = array8.slice(2,4)
+console.log(array8);
+console.log(Narray8);
+
+
+var array9 = [1,2,3,4];
+
+array9.unshift("new");
+array9[array9.indexOf("new")] = "old";
+console.log(array9)
+
+array9.filter(function(value) {
+  return value > 2;
+})
+
+array9.map(function(value) {
+  return value * 2;
+})
+
+
+
+var array10 = [1,2,3,4];
+console.log(array10);
+array10.reverse();
+console.log(array10);
+
+
+var array11 = [1,2,3,4]
+var array12 = ["Join", "me"]
+var array13 = [7,8,9]
+
+console.log(array11.concat(array12));
+console.log(array11.join(array12));
+console.log(array11.join(array13));
+
+
+var array14 = [1,2,3,4];
+
+console.log(array14.reduce(function(total, value) {
+  console.log("Total:" + total + ",Value:" + value);
+  return total + value;
+}));
+
+
+var numbers = [170, 50, 25];
+console.log(numbers.reduce(function(total, num) {
+  return total -num;
+}))

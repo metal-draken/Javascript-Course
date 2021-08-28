@@ -1,0 +1,71 @@
+var account = {
+  cash: 12000,
+  withdraw: function(amount) {
+    this.cash -= amount;
+    console.log("Withdraw" + amount + ", new cash reserve is: " + this.cash);
+  }
+};
+account.withdraw(1000);
+account.withdraw(1000);
+account.withdraw(1000);
+
+
+
+var ABC = {
+  order : 10,
+  column: 5,
+  XXX: "Default",
+}
+
+Object.defineProperty(ABC,"Settt", {
+    get: function() {
+    return this.XXX;
+  },
+  set: function(Settt) {
+    this.XXX = Settt;
+  }
+});
+
+console.log(ABC);
+console.log(ABC.Settt);
+console.log(ABC.XXX);
+ABC.Settt = "lo que sea";
+console.log(ABC.Settt);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Object.defineProperty(ABC,"name", {
+  value: "ID000-1",
+  writable: true,
+  enumerable: true,
+  });
+
+console.log(ABC.name);
+
+Object.defineProperty(ABC,"message", {
+  get: function() {
+    return "Hello"
+  },
+})
+
+console.log(ABC.message);*/
+

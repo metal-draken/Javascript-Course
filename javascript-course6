@@ -1,0 +1,32 @@
+/*function fn() {
+  console.log(this)
+}
+
+var ABC = {
+  abcfn: fn,
+};
+
+ABC.abcfn()
+
+var person = {
+  name: "Max",
+}
+
+ABC.abcfn.bind(person)();*/
+
+
+
+function ZZZ(message) {
+  console.log (message + this);  
+}
+
+var ABC = {
+  abcfn: ZZZ,
+};
+
+var person = {
+  name: "Max",
+}
+
+ABC.abcfn.call(person,"Hello");
+ABC.abcfn.apply(person,["Hello"]);

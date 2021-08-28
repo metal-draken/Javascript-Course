@@ -1,0 +1,20 @@
+function ABC() {console.log("Hello!")};
+
+setTimeout(ABC,10); 
+
+
+setTimeout(function() {
+  console.log("Finished");
+},100);
+
+/*setInterval(function() {
+  console.log("Finished");
+},100);*/
+
+var interval = setInterval(function() {
+  console.log("Finished");
+},500);
+
+setTimeout(function() {
+  clearInterval(interval);
+}, 2500);

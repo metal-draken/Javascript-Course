@@ -1,0 +1,22 @@
+function message(ABC) {
+  console.log(ABC);
+}
+
+message("Hi");
+
+function XXX(A, B, C) {
+  console.log(A+B+C);
+  console.log(arguments);
+};
+
+XXX(1,2,3);
+
+
+
+
+
+
+var HEHE = XXX;
+
+console.log(HEHE.name);
+console.log(HEHE.lenght);

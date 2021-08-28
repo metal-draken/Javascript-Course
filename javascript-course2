@@ -1,0 +1,15 @@
+var test = "Global scope";
+function localScope() {
+  console.log(test);
+}
+localScope();
+
+
+
+var test2 = "Global scope 2";
+function localScope2() {
+  var test2 = "Local scope 2"
+  console.log(test2);
+}
+localScope2();
+console.log(test2);

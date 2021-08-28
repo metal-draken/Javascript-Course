@@ -1,0 +1,22 @@
+var MarcoCuenta = {
+  dineroactual: 1000,
+}
+
+Object.defineProperty(MarcoCuenta, "dinero", {
+  get: function(){
+    return this.dineroactual;
+  },
+  set: function(deposito) {
+    this.dineroactual = deposito + this.dineroactual;
+  }
+});
+
+console.log(MarcoCuenta.dinero)
+MarcoCuenta.dinero = 100;
+console.log(MarcoCuenta.dinero)
+MarcoCuenta.dinero = 300;
+console.log(MarcoCuenta.dinero)
+MarcoCuenta.dinero = 500;
+console.log(MarcoCuenta.dinero)
+MarcoCuenta.dinero = 600;
+console.log(MarcoCuenta.dinero)

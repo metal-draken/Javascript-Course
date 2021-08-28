@@ -1,0 +1,12 @@
+try {
+  Noexiste();
+} catch (error) {
+  console.log("error");
+  console.log(error);
+} finally {
+  console.log("funcione o no me ejecuto");
+}
+
+function Noexiste() {
+  console.log("NOexiste")
+}

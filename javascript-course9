@@ -1,0 +1,20 @@
+var person = {
+  name: "Marco",
+  age: 35,
+  profession: "Architect",
+  sector: "Consulting",
+}
+
+delete person.name;
+
+console.log (person.name);
+console.log ("name" in person);
+console.log ("age" in person);
+
+for (var FIELD in person) {
+  console.log(FIELD);
+}
+
+for (var FIELD in person) {
+  console.log(person[FIELD]);
+}
